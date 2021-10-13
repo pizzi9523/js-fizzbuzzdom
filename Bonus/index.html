@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Biglietto treno</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    <main class=" ">
+
+        <section class=" text-center mb-5">
+            <h1 class="c_white">Calcola il prezzo del tuo biglietto</h1>
+
+            <div class="container form b_radius bg_white">
+                <div class="row py-4 row flex--wrap justify-content-around">
+                    <div class="form_group col-4">
+                        <label for="user-name">Full name</label>
+                        <input type="text" id="user-name">
+                    </div>
+                    <div class="form_group col-4">
+                        <label for="distance">Distance</label>
+                        <input type="text" id="distance">
+                    </div>
+                    <div class="form_group col-4">
+                        <label for="age">Age Group</label>
+                        <select name="age" id="age">
+                            <option value="minorenne">Minorenne</option>
+                            <option value="maggiorenne">Maggiorenne</option>
+                            <option value="over65">over65</option>
+
+                        </select>
+                    </div>
+                </div>
+                <div class="row align-items-center justify-content-center py-4">
+                    <div class="col-2">
+                        <button id="generate">Generate</button>
+                    </div>
+                    <div class="col-2">
+                        <button id="cancel">Cancel</button>
+                    </div>
+                </div>
+
+            </div>
+
+            <div id="prezzo"></div>
+
+        </section>
+
+        <section class="biglietto">
+            <div class="container ">
+                <div class="row bg_white b_radius">
+                    <div class="col-3">Nome</div>
+                    <div class="col-2">Prezzo</div>
+                    <div class="col-2">Carrozza</div>
+                    <div class="col-2">Distanza</div>
+                    <div class="col-2">Codice</div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>

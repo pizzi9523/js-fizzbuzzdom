@@ -1,0 +1,36 @@
+body{
+    background-color: #B91547;
+}
+
+.bg_white{
+    background-color: white;
+}
+
+.c_white{
+    color: white;
+}
+
+.b_radius{
+    border-radius: 0.5rem;
+}
+
+label{
+    margin: 10px ;
+    display: block;
+    color: #B91547;
+}
+
+input,
+select{
+   padding: 0.25rem; 
+   border-radius: 10px;
+   border: 2px solid #B91547;
+}
+
+button{
+    color: #B91547;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin: 0 10px;
+    background-color: #C5C5C5;
+}
