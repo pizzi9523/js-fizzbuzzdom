@@ -17,34 +17,34 @@
     <main class=" ">
 
         <section class=" text-center mb-5">
-            <h1 class="c_white">Calcola il prezzo del tuo biglietto</h1>
+            <h1 class="c_white">CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
 
             <div class="container form b_radius bg_white">
                 <div class="row py-4 row flex--wrap justify-content-around">
                     <div class="form_group col-4">
-                        <label for="user-name">Full name</label>
-                        <input type="text" id="user-name">
+                        <label for="user-name">Nome Cognome</label>
+                        <input type="text" id="user-name" class="text-center">
                     </div>
                     <div class="form_group col-4">
-                        <label for="distance">Distance</label>
-                        <input type="text" id="distance">
+                        <label for="distance">Km da percorrere</label>
+                        <input type="text" id="distance" class="text-center">
                     </div>
                     <div class="form_group col-4">
-                        <label for="age">Age Group</label>
+                        <label for="age">Fascia d'età</label>
                         <select name="age" id="age">
-                            <option value="minorenne">Minorenne</option>
-                            <option value="maggiorenne">Maggiorenne</option>
-                            <option value="over65">over65</option>
+                            <option value="minorenne" class="text-center">Minorenne</option>
+                            <option value="maggiorenne" class="text-center">Maggiorenne</option>
+                            <option value="over65" class="text-center">Over65</option>
 
                         </select>
                     </div>
                 </div>
                 <div class="row align-items-center justify-content-center py-4">
                     <div class="col-2">
-                        <button id="generate">Generate</button>
+                        <button id="generate">Genera</button>
                     </div>
                     <div class="col-2">
-                        <button id="cancel">Cancel</button>
+                        <button id="cancel">Annulla</button>
                     </div>
                 </div>
 
@@ -54,14 +54,53 @@
 
         </section>
 
-        <section class="biglietto">
-            <div class="container ">
-                <div class="row bg_white b_radius">
-                    <div class="col-3">Nome</div>
-                    <div class="col-2">Prezzo</div>
-                    <div class="col-2">Carrozza</div>
-                    <div class="col-2">Distanza</div>
-                    <div class="col-2">Codice</div>
+        <section class="biglietto mb-5">
+            <h2 class="title_biglietto c_white text-center">IL TUO BIGLIETTO</h2>
+            <div class="container bg_white py-4">
+                <h2 class="pt-4 mx-4">DETTAGLIO PASSEGGERI</h2>
+
+                <div class="my_ticket row mx-4 justify-content-between">
+                    <div class="col-3 bg_grey">
+                        <div class="categoria_big">
+                            NOME PASSEGGERO
+                        </div>
+                        <div class="passenger_name fw-bolder">
+                            Jon Snow
+                        </div>
+
+                    </div>
+                    <div class="col-2">
+                        <div class="categoria">
+                            Offerta
+                        </div>
+                        <div class="offerta">
+                            Biglietto standard
+                        </div>
+                    </div>
+                    <div class="col-2">
+                        <div class="categoria">
+                            Carrozza
+                        </div>
+                        <div class="n_carrozza">
+                            5
+                        </div>
+                    </div>
+                    <div class="col-2">
+                        <div class="categoria">
+                            Codice CP
+                        </div>
+                        <div class="codice_cp">
+                            92911
+                        </div>
+                    </div>
+                    <div class="col-2">
+                        <div class="categoria">
+                            Costo biglietto
+                        </div>
+                        <div class="ticket_price">
+                            2.10€
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
