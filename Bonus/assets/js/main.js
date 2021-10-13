@@ -11,6 +11,7 @@ const offertaElement = document.querySelector(".offerta");
 const carrozzaElement = document.querySelector(".n_carrozza");
 const codiceCpElement = document.querySelector(".codice_cp");
 const costoBigliettoElement = document.querySelector(".ticket_price");
+const sectionBigliettoElement = document.querySelector("section.biglietto")
 
 
 generateButtonElement.addEventListener("click", function () {
@@ -41,6 +42,7 @@ generateButtonElement.addEventListener("click", function () {
     carrozzaElement.innerHTML = Math.floor(Math.random() * 20) + 1;
     codiceCpElement.innerHTML = Math.floor(Math.random() * 100000) + 1;
     costoBigliettoElement.innerHTML = `${ticketPrice.toFixed(2)}€`;
+    sectionBigliettoElement.style.display = "block"
 })
 
 cancelButtonElement.addEventListener("click", function () {
@@ -53,7 +55,5 @@ cancelButtonElement.addEventListener("click", function () {
     codiceCpElement.innerHTML = "";
     costoBigliettoElement.innerHTML = "";
     offertaElement.innerHTML = "";
-
-
 })
 
