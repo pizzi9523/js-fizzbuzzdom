@@ -6,6 +6,12 @@ const cancelButtonElement = document.getElementById("cancel");
 const prezzoElement = document.getElementById("prezzo");
 let message;
 
+const passengerNameTicketElement = document.querySelector(".passenger_name");
+const offertaElement = document.querySelector(".offerta");
+const carrozzaElement = document.querySelector(".n_carrozza");
+const codiceCpElement = document.querySelector(".codice_cp");
+const costoBigliettoElement = document.querySelector(".ticket_price");
+
 
 generateButtonElement.addEventListener("click", function () {
     const passengerName = fullNameInputElement.value;
@@ -15,26 +21,26 @@ generateButtonElement.addEventListener("click", function () {
     // console.log(ticketPrice);
 
     if (passengerAge == "minorenne") {
-        ticketPrice -= (ticketPrice * 20) / 100
-        message = "Hai diritto al 20% di sconto"
+        ticketPrice -= (ticketPrice * 20) / 100;
+        offertaElement.innerHTML = "Sconto 20%";
         //console.log(ticketPrice);
     }
     else if (passengerAge == "over65") {
-        ticketPrice -= (ticketPrice * 40) / 100
-        message = "Hai diritto al 40% di sconto"
+        ticketPrice -= (ticketPrice * 40) / 100;
+        offertaElement.innerHTML = "Sconto 40%";
 
         // console.log(ticketPrice);
     }
     else {
-        message = "Non hai diritto a nessuno sconto"
+        offertaElement.innerHTML = "Biglietto Standard";
+
     }
 
-    prezzoElement.innerHTML = `Ciao ${passengerName}! ${message} il prezzo del biglietto è ${ticketPrice.toFixed(2)} €`
 
-    // console.log(`Il prezzo del biglietto è ${ticketPrice.toFixed(2)} €`);
-    // console.log(passengerAge);
-    // console.log(numberKm);
-
+    passengerNameTicketElement.innerHTML = passengerName;
+    carrozzaElement.innerHTML = Math.floor(Math.random() * 20) + 1;
+    codiceCpElement.innerHTML = Math.floor(Math.random() * 100000) + 1;
+    costoBigliettoElement.innerHTML = `${ticketPrice.toFixed(2)}€`;
 })
 
 cancelButtonElement.addEventListener("click", function () {
@@ -42,6 +48,12 @@ cancelButtonElement.addEventListener("click", function () {
     ageElement.value = "";
     distanceElement.value = "";
     prezzoElement.innerHTML = "";
+    passengerNameTicketElement.innerHTML = "";
+    carrozzaElement.innerHTML = "";
+    codiceCpElement.innerHTML = "";
+    costoBigliettoElement.innerHTML = "";
+    offertaElement.innerHTML = "";
+
 
 })
 
