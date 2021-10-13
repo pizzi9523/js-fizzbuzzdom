@@ -1,0 +1,25 @@
+body{
+    background-color: #183A4A;
+}
+
+.container{
+    width: 60%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+p{
+    margin: 10px;
+    background-color: #3D88AE;
+    text-align: center;
+    line-height: 80px;
+    width: 80px;
+    height: 80px;
+}
+
+.title{
+    text-align: center;
+    color: white;
+    font-size: 80px;
+}
